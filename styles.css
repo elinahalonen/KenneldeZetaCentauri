@@ -92,8 +92,10 @@ p  { margin: 0 0 1.1em; }
 /* ---- Header / nav ---------------------------------------------------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: color-mix(in srgb, var(--sand) 92%, transparent);
-  backdrop-filter: blur(6px);
+  /* No backdrop-filter here: it creates a new containing block for any
+     position:fixed descendant (the mobile nav panel), confining it to
+     the header's own small box instead of the full viewport. */
+  background: var(--sand);
   border-bottom: 1px solid color-mix(in srgb, var(--gold) 45%, transparent);
 }
 .header-inner {
@@ -259,7 +261,8 @@ img.ratio-wide, img.ratio-portrait, img.ratio-square {
 /* Overview door cards used on Our Dogs / Litters index pages */
 .door-card { position: relative; display: block; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow); color: var(--cream); min-height: 380px; }
 .door-card .photo-slot, .door-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
-.door-card__label { position: absolute; inset: auto 0 0 0; padding: 1.6rem 1.7rem; background: linear-gradient(180deg, transparent, rgba(43,39,33,.85)); }
+.door-card__label { position: absolute; inset: auto 0 0 0; padding: 1.6rem 1.7rem; background: linear-gradient(180deg, rgba(43,39,33,.18) 0%, rgba(43,39,33,.9) 100%); }
+.door-card__label .card__role, .door-card__label .card__name, .door-card__label p { text-shadow: 0 1px 10px rgba(0,0,0,.45); }
 .door-card__label .card__name { color: var(--cream); font-size: 2.6rem; }
 .door-card__label p { margin: .3rem 0 0; color: rgba(245,239,226,.88); }
 .door-card__label .tag-row { margin-top: .8rem; }
