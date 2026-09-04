@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Zeta Centauri</title>
+  <meta name="description" content="Get in touch with Kennel de Zeta Centauri about a Polish Hunting Spaniel puppy, or just to say hello.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Pinyon+Script&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="Zeta Centauri — Polish Hunting Spaniels"></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dogs.html">Our Dogs</a>
+        <a href="litters.html">Litters</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="nav-ext" href="https://busydoggie.com" target="_blank" rel="noopener">BusyDoggie Blog ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:center;">
+          <div class="stack">
+            <div>
+              <p class="eyebrow">Get in touch</p>
+              <h1 class="mt0">Say hello</h1>
+              <hr class="rule">
+            </div>
+            <p class="lead">
+              Curious about a puppy, or just want to talk spaniels and nosework? We'd love to
+              hear from you. We answer every genuine enquiry personally.
+            </p>
+            <ul class="stats" style="gap:.7rem;">
+              <li><b>Email</b><span><a href="mailto:hello@example.com">hello@example.com</a> <span class="note">(placeholder)</span></span></li>
+              <li><b>Instagram</b><span><a href="#">@yourhandle</a> <span class="note">(placeholder)</span></span></li>
+              <li><b>Based in</b><span>Kennemerland dunes, Netherlands</span></li>
+            </ul>
+            <p><a class="btn btn-primary" href="mailto:hello@example.com">Email us about a puppy</a></p>
+            <p class="note">
+              A proper contact form can be added later — GitHub Pages can't process forms on its
+              own, but a free service (e.g. Formspree) drops in with a few lines. For now, email
+              is the simplest, most reliable route.
+            </p>
+          </div>
+          <img class="ratio-portrait" src="assets/photos/web-contact.jpg" alt="A spaniel in the evening dune light">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--green center">
+      <div class="container">
+        <p class="eyebrow">Before you enquire</p>
+        <h2 class="measure" style="margin-inline:auto;">We place for the long run</h2>
+        <p class="measure" style="margin-inline:auto;">
+          A Zeta Centauri puppy is a lifelong relationship. We'll ask about your life, your
+          plans and your dog experience — not to judge, but to match well. <span class="note" style="color:rgba(245,239,226,.7);">(Placeholder — add
+          your process, waiting-list notes and any expectations here.)</span>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo-cream.png" alt="Zeta Centauri">
+          <p style="max-width:34ch;color:rgba(245,239,226,.85);">
+            A small kennel of Polish Hunting Spaniels in the Kennemerland dunes,
+            the Netherlands.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="dogs.html">Our Dogs</a></li>
+            <li><a href="litters.html">Litters</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <ul class="footer-links">
+            <li><a href="https://busydoggie.com" target="_blank" rel="noopener">BusyDoggie blog ↗</a></li>
+            <li><a href="contact.html">Puppy enquiries</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Kennel de Zeta Centauri</span>
+        <span>Photography: Tytti Ojala · @photosbytytti</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
