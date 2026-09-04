@@ -149,7 +149,8 @@ p  { margin: 0 0 1.1em; }
   position: relative; min-height: 86vh; display: flex; align-items: flex-end;
   color: var(--cream);
   background:
-    linear-gradient(180deg, rgba(43,39,33,.12) 0%, rgba(43,39,33,.30) 55%, rgba(43,39,33,.78) 100%),
+    linear-gradient(90deg, rgba(28,24,18,.64) 0%, rgba(28,24,18,.34) 36%, rgba(28,24,18,0) 62%),
+    linear-gradient(180deg, rgba(43,39,33,.10) 0%, rgba(43,39,33,.20) 55%, rgba(43,39,33,.72) 100%),
     url('assets/photos/web-hero.jpg');
   background-size: cover; background-position: center 42%;
 }
@@ -228,6 +229,28 @@ img.ratio-wide, img.ratio-portrait, img.ratio-square {
 .site-footer a:hover { color: var(--gold-2); }
 .footer-links { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; font-size: .95rem; }
 .footer-bottom { border-top: 1px solid rgba(245,239,226,.18); margin-top: 2rem; padding-top: 1.4rem; font-size: .82rem; color: rgba(245,239,226,.7); display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
+
+/* ---- Show results ------------------------------------------------------ */
+.show-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.3rem; }
+.show-item { border-left: 3px solid var(--gold); padding-left: 1.1rem; }
+.show-item .meta { font: 600 .76rem/1.3 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: .35rem; }
+.show-item .result { font-weight: 600; color: var(--green); margin: 0 0 .35rem; }
+.show-item blockquote { margin: 0; font-style: italic; color: var(--ink-soft); font-size: .96rem; }
+.section--green .show-item { border-left-color: var(--gold-2); }
+.section--green .show-item .result { color: var(--cream); }
+.section--green .show-item .meta, .section--green .show-item blockquote { color: rgba(245,239,226,.75); }
+
+/* Back link */
+.back-link { display: inline-block; font: 600 .78rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 1.2rem; }
+.back-link:hover { color: var(--buckthorn); }
+
+/* Overview door cards used on Our Dogs / Litters index pages */
+.door-card { position: relative; display: block; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow); color: var(--cream); min-height: 380px; }
+.door-card .photo-slot, .door-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+.door-card__label { position: absolute; inset: auto 0 0 0; padding: 1.6rem 1.7rem; background: linear-gradient(180deg, transparent, rgba(43,39,33,.85)); }
+.door-card__label .card__name { color: var(--cream); font-size: 2.6rem; }
+.door-card__label p { margin: .3rem 0 0; color: rgba(245,239,226,.88); }
+.door-card__label .tag-row { margin-top: .8rem; }
 
 /* ---- Utility --------------------------------------------------------- */
 .stack > * + * { margin-top: 1.1rem; }
