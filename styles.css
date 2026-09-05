@@ -238,6 +238,7 @@ img.ratio-wide, img.ratio-portrait, img.ratio-square {
 /* Divider with orbit dot */
 .rule { border: 0; height: 1px; background: color-mix(in srgb, var(--gold) 55%, transparent); max-width: 60px; margin: 1.4rem 0; }
 .center .rule { margin-inline: auto; }
+.center .note { margin-inline: auto; }
 
 /* Pull quote */
 .quote { font-family: var(--serif); font-style: italic; font-size: clamp(1.3rem, 3vw, 1.9rem); line-height: 1.4; max-width: 34ch; }
